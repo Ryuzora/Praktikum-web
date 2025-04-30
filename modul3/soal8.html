@@ -1,0 +1,79 @@
+<html>
+<head>
+  <title>Form</title>
+</head>
+<body>
+    <center>
+      <table border="3" width=500 padding=0 margin=0 cellspacing=1>
+        <th bgcolor="skyblue">
+          <font color ="red"><h1>Pendaftaran Kursus</h1></font>
+        </th>
+        <tr bgcolor="grey" height=400>
+          <td valign=top>
+            <h3>Data Diri</h3>
+            <table>
+              <form>
+                <tr>
+                  <td>Nama</td>
+                  <td><input type="text" name="nama" value="" size=15></td>
+                </tr>
+                <tr>
+                  <td>Nim</td>
+                  <td><input type="text" name="nama" value="" size=15></td>
+                </tr>
+                <tr>
+                  <td>E-mail</td>
+                  <td><input type="email" name="email" value="" size=15></td>
+                </tr>
+                <tr>
+                  <td>Tanggal Lahir</td>
+                  <td><input type="date" name="tanggalLahir" value="" size=15></td>
+                </tr>
+                <tr>
+                  <td valign=top>Jenis Kelamin</td>
+                  <td>
+                    <input type="radio" name="jenis_kelamin" value="L">Laki-laki <br>
+                    <input type="radio" name="jenis_kelamin" value="P">Perempuan
+                  </td>
+                </tr>
+                <tr>
+                  <td valign=top>Pilih Program Kursus</td>
+                  <td>
+                    <input type="checkbox" name="C#" value="C#"> C#
+                    <br>
+                    <input type="checkbox" name="Java" value="Java"> Java
+                    <br>
+                    <input type="checkbox" name="SQL" value="SQL"> SQL
+                    <br>
+                    <input type="checkbox" name="HTML dan PHP" value="HTML dan PHP"> HTML dan PHP
+                  </td>
+                </tr>
+                <tr>
+                  <td>Pilihan Hari/Jam Kursus</td>
+                  <td>
+                    <select name="jadwal">
+                      <option value="pil1">Senin - Rabu/09.00 - 11.00</option>
+                      <option value="pil2">Kamis - Sabtu/08.00 - 10.00</option>
+                    </select>
+                  </td>
+                </tr>
+                <br>
+              </form>
+            </table>
+          </td>
+        </tr>
+        <tr bgcolor="salmon">
+          <td>
+            Komentar Anda:
+            <br>
+            <textarea name="comment" rows="5" cols="50"></textarea>
+            <br>
+            <button type="reset">Reset</button>
+            <button type="submit">Submit</button>
+            <button type="button">Cancel</button>
+          </td>
+        </tr>
+      </table>
+    </center>
+</body>
+</html>
